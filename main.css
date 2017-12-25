@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    transition: all 0.5s; 
+}
+body {
+    font-size: 100%;
+    margin: 0px;
+}
+ul.onepage-pagination li a {
+    color: white;
+}
+section.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10vw;
+    box-sizing: border-box;
+}
+section#header {
+    background-color: #85C1E9;
+}
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Oswald";
+    width: 100%;
+    font-size: 10vh;
+}
+section#first-linece {
+    background-color: #F1948A;
+    font-size: 20px;
+}
+section#picture1 {
+    background-image: url(20170926_104953_RichtoneHDR-02.jpeg);
+    background-position: right;
+    background-size: cover;
+}
+section#picture2 {
+    background: url(20170925_171045-01.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+section#social {
+    background: #76D7C4;
+    justify-content: space-around;
+    transition: all 1.25s;
+}
+section#social:nth-last-child {
+    padding: 0px;
+}
+#texter {
+    position: absolute;
+    top: 16vh;
+    font-size: 5vh;
+}
+.grid {
+    display: flex;
+    justify-content: space-between;
+    max-height: 80vh;
+}
+.soc-img {
+    font-size: 20vh;
+    color: white;
+    padding: 20px;
+    height: 20vh;
+    min-width: 20vh;
+    text-align: center;
+}
+#gal {
+    display: block;
+    box-sizing: border-box;
+    height: 25vh;
+    padding: 5vh;
+    padding-bottom: 2vh;
+}
+.vk {
+    background: #507299 !important;
+}
+.gal {
+    background: #016dd0 !important;
+}
+.fic {
+    background: #c69e6b !important;
+}
+.inst {
+    background: #DE3670 !important;
+}
+@media all and (min-width: 880px) {
+    .grid {
+        min-width: 80vw;
+    }
+}
+@media all and (max-width: 640px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #texter {
+        top: 5vh;
+    }
+    .soc-img {
+        width: 20vh;
+    }
+}
+@media all and (max-width: 330px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    #texter {
+        top: 0px;
+    }
+    .soc-img {
+        height: 7vh;
+        font-size: 7vh;
+    }
+}
